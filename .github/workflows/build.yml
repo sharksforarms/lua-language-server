@@ -40,7 +40,7 @@ jobs:
         with:
           submodules: recursive
       - uses: actboy168/setup-luamake@master
-      - run: luamake -platform ${{ matrix.platform }}
+      - run: luamake -v -platform ${{ matrix.platform }}
 
       - name: Setting up workflow variables
         id: vars
