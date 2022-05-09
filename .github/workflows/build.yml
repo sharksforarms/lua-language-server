@@ -20,6 +20,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - { os: ubuntu-22.04,   target: linux,   platform: linux-x64    }
+          - { os: ubuntu-22.04,   target: linux,   platform: linux-arm64  }
           - { os: ubuntu-18.04,   target: linux,   platform: linux-x64    }
           - { os: ubuntu-18.04,   target: linux,   platform: linux-arm64  }
           - { os: macos-11,       target: darwin,  platform: darwin-x64   }
